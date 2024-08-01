@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #b936ee 50.63%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 10.63%,
+    #b936ee 117.04%
+  );
+}
+
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #1c1c1d 10.63%,
+    #ffffff 100.04%
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.about {
+  background-image: url('./assets/bg.png');
+}
+
+.work {
+  background-image: url('./assets/work.jpg');
+}
+
+.connect {
+  background-image: url('./assets/bg-connect.jpg');
+}
+
+@layer base {
+  body {
+    @apply font-sans text-lg leading-8;
+  }
+  #root {
+    @apply h-screen w-full mx-auto;
+  }
+  .section {
+    @apply mx-auto max-w-screen-xl;
+  }
+}

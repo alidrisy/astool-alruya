@@ -12,25 +12,25 @@ const Services = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="service" className="section relative pt-28 bg-gray-100 z-0">  
-            <div className="flex-col bg-cover flex-1 flex space-y-[100px] items-center pt-20 pb-20 px-20">
+        <section id="service" className="section relative pt-16 md:pt-28 bg-gray-100 z-0">  
+            <div className="flex-col bg-cover flex-1 flex space-y-[100px] items-center pt-20 pb-20 px-10 sm:px-20">
                 <div className="relative ">
-                    <h1 className={`text-black/10 z-10 ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[100px]" : "font-oswald text-[80px]"} font-[600] uppercase`}> 
+                    <h1 className={`z-10 ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[55px] md:text-[100px] text-[#DADBDD]" : "font-oswald text-[50px] md:text-[80px] text-black/10"} font-[600] uppercase`}> 
                         {t('services.title')}
                     </h1>
-                    <div className={`absolute flex items-center justify-center  ${t("languages") === 'ُEnglish' ? "left-[28px] top-[9px]" : "left-[55px]  top-[2px]"}`}>
-                        <p className="z-10 text-amber-500 font-[600] font-serif uppercase flex text-[30px]">
+                    <div className={`absolute flex items-center justify-center  ${t("languages") === 'ُEnglish' ? "left-[28px] top-[9px]" : "left-[30px] md:left-[55px]  top-[2px]"}`}>
+                        <p className="z-10 text-amber-500 font-[600] font-serif uppercase flex text-[25px] md:text-[30px]">
                         <IoIosArrowForward className="-mr-4 rotate-0" />
                         <IoIosArrowForward className="-mr-4" />
                         <IoIosArrowForward className="-mr-4" />
                         <IoIosArrowForward className="" />
                         </p>
-                        <h1 className={`text-black z-10 ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[55px]" : "font-oswald text-[46px]"} font-[600] uppercase`}> 
+                        <h1 className={`text-black z-10 ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[30px] md:text-[55px]" : "font-oswald text-[30px] md:text-[46px]"} font-[600] uppercase`}> 
                             {t('services.title')}
                         </h1>
                     </div>
                 </div>
-                <div className="gap-10 flex text-white">
+                <div className="gap-10 flex flex-col md:flex-row text-white">
                     <div className="border flex-1 flex flex-col bg-[#1C1C1C]" dir="auto">
                         <img src={Shipping} className="w-full" alt="" />
                         <div className={`mt-4 px-4 ${t("languages") === 'ُEnglish' ? "border-r-[6px] " : "border-l-[6px]"} border-amber-500 space-y-4 flex-1`}>

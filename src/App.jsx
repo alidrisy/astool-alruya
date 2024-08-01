@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import Header from './components/header/Header'
-import Banner from './components/banner/Banner1'
+import Banner from './components/banner/Banner'
 import About from './components/about/About'
 import Services from './components/services/Services'
 import Work from './components/work/Work'
 import Connect from './components/connect/Connect'
+import Footer from './components/footer/Footer'
+
 /**
  * The main application component.
  * This component renders the Header component and serves as the root of the application.
@@ -13,14 +15,14 @@ import Connect from './components/connect/Connect'
  */
 function App() {
   return (
-    <main>
+    <main className='relative'>
      <Header />
      <Banner />
      <About />
      <Services />
      <Work />
      <Connect />
-     <div className='h-[200px] bg-gray-100'></div>
+     <Footer />
     </main>
   )
 }

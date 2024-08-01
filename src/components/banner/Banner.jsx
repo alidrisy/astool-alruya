@@ -1,46 +1,39 @@
 import { useTranslation } from 'react-i18next';
 import Truck from '../../assets/truk1.png'
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
-import { fadeIn } from '../../variants';
+
 
 const Banner = () => {
     const { t } = useTranslation();
     
     return (
-        <div className='section'>
-        <section className={`flex flex-col space-y-7 justify-between pt-10 px-6  ${t("languages") === 'ُEnglish' ? "flex-row-reverse" : "flex-row"} mx-auto`}>
-            
-           <div className={`flex ${t("languages") === 'ُEnglish' ? "flex-row-reverse font-bold" : "flex-row font-semibold"} justify-between items-start w-full`}>
-                <h1 className='text-[120px] text-black font-bold pt-[22px]'>{t("banner.title1")}</h1>
-                <div className={`max-w-[34%] ${t("languages") === 'ُEnglish' ? "text-left" : "text-right"}  space-y-4 pr-1`}>
-                <p className={`text-[13px] ${t("languages") === 'ُEnglish' ? "font-bold" : ""}  font-[500] leading-[2.1]`} dir='auto'>{t("banner.side")}</p>
-                <button className={`bg-amber-400 hover:bg-amber-300 rounded-[5px] px-3 py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
-                {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[11px]' />}
-                    <p className='text-[12.5px] text-gray-900 font-bold'>{t("banner.button")}</p>
-                {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[11px]' /> }
-                </button>
+        <section className='section pt-[1px]' id='home'>
+        <div className='relative'>
+            <img className='w-full' src={Truck} alt="" />
+            <div className='absolute  w-full h-full z-10 bg-black/60 top-0'></div>
+            <div className={`absolute ${t("languages") === 'ُEnglish' ? "font-sans" : "font-oswald"} w-full h-full z-20 flex flex-col space-y-2 sm:space-y-4 lg:space-y-6 xl:space-y-12 p-[60px] lg:p-[120px]  items-center -top-6 min-[500px]:top-0`}>
+                <div className='flex relative flex-col space-y-2 font-semibold justify-center items-center'>
+                    <h1 className={`text-white text-[16px] max-[600px]:text-[18px] max-[700px]:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl ${t("languages") === 'ُEnglish' ? "font-bold" : ""} z-30`} dir='auto'>
+                        {t('banner1.title1')}
+                    </h1>
+                    <span className={`z-20 p-5 sm:p-6 md:p-7 xl:p-14 absolute ${t("languages") === 'ُEnglish' ? "-left-5 -top-3 xl:-top-7" : "-right-5 -top-3 md:-top-5"} border-[8px] sm:border-[10px] md:border-[12px] xl:border-[18px] border-amber-500`}></span>
+                    <h1 className={`text-white ${t("languages") === 'ُEnglish' ? "font-bold text-[15px] max-[600px]:text-[16px] max-[700px]:text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl" : "text-[16px] max-[600px]:text-[18px] max-[700px]:text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl"} z-30`}  dir='auto'>
+                    {t('banner1.title2')}
+                    </h1>
                 </div>
-           </div>
-           <div className={`flex justify-between ${t("languages") === 'ُEnglish' ? "flex-row-reverse -space-x-3" : "flex-row"} w-full`}>
-                <div className='max-w-[30%] space-y-5'>
-                    <p className={`text-[13px] ${t("languages") === 'ُEnglish' ? "text-right font-bold" : "text-left"} font-[500] leading-[1.6]`} dir='auto'>{t("banner.side1")} </p>
-                    <div className={`space-x-2 ${t("languages") === "ُEnglish" && "float-end"} `}>
-                        <button className='border-2 p-2'>
-                            <FaArrowLeft className='text-[11px]' /></button>
-                        <button className='border-2 border-black bg-black p-2'><FaArrowRight className='text-[11px] text-white' /></button>
-                    </div>
+                <h2 className={`text-white relative z-30 font-[300] ${t("languages") === 'ُEnglish' ? "font-bold" : "font-semibold"} text-[10px] sm:text-sm md:text-md lg:text-xl xl:text-2xl text-center max-w-[250px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[500px] max-sm:leading-3 xl:max-w-[700px]`}  dir='auto'>
+                {t('banner1.des')}
+                </h2>
+                <div className='pt-3 xl:pt-10 pb-20'>
+                    <button className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-2 md:px-3 sm:py-[2px] md:py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
+                    {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[7px] sm:text-[9px] md:text-[11px]' />}
+                        <p className='text-[9px] sm:text-[10px] md:text-[12.5px] font-bold'>{t("banner1.button")}</p>
+                    {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[7px] sm:text-[9px] md:text-[11px]' /> }
+                    </button>
                 </div>
-                {t("languages") === "ُEnglish" ? <div><h1 className={`text-[90px] text-black pl-[130px]  font-bold leading-[1] text-left`}>
-            الخدمات  &
-                </h1> <h1 className={`text-[90px] text-black  font-bold leading-[1] pl-2 text-left`}>
-                الوجستية
-                </h1> </div>:<h1 className={`text-[115px]  text-black text-right font-bold pt-8`}>& Logistics</h1>}
-           </div>
-           
-        </section>
-        <img className='mt-10' src={Truck} alt="" />
+            </div>
         </div>
+        </section>
     )
 }
 

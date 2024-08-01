@@ -56,7 +56,25 @@ i18n
             article: 'We provide all the needs for your project, from the initial foundation to the final finishes. We guarantee fast and direct delivery to the job site, anytime and anywhere.'
         },
         button: 'Read more',
-        }
+        },
+        connect: {
+          title: "Connect Us",
+          subtitle: "Get in touch with us",
+          namePlaceholder: "Your name",
+          emailPlaceholder: 'Email',
+          numberPlaceholder: "Phone Number",
+          messagePlaceholder: "Message",
+          button: "Send",
+          location: "Riyadh, Jarir",
+        },
+        footer: {
+          title: "Any questions in mind?",
+          disc: "Experience the difference of working with a logistics company that puts your business first. Contact us today to discuss your logistics needs and let us help you unlock new opportunities for growth.",
+          operationT: "Hours of Operation",
+          operationD: "Saturday to Thursday",
+          operationH: "09:00 am to 05:00 pm",
+          copyright: "Copyright © Ostool Alroya 2024. All rights reserved."
+        },
       }
       },
       ar: {
@@ -99,6 +117,25 @@ i18n
             article: 'نقدم لك كافة احتياجات مشروعك، من بداية التأسيس إلى التشطيبات النهائية. نحن نضمن لك توصيل سريع ومباشر إلى موقع العمل، في أي وقت وفي أي مكان. '
         },
         button : 'إقرأ المزيد',
+      },
+        connect: {
+          title: "تواصل معنا",
+          subtitle: "تواصل بنا",
+          namePlaceholder: "اسمك",
+          emailPlaceholder: "البريد الإلكتروني",
+          numberPlaceholder: "رقم الهاتف",
+          messagePlaceholder: "رسالة",
+          button: "إرسال",
+          location: "الرياض, جرير",
+      
+      },
+      footer: {
+        title: "هل لديك أي أسئلة؟",
+        disc: "اختبر الفرق عند العمل مع شركة لوجستية تضع مصلحة عملك في المقام الأول. تواصل معنا اليوم لمناقشة احتياجاتك اللوجستية ودعنا نساعدك في اكتشاف فرص جديدة للنمو.",
+        operationT: "ساعات العمل",
+        operationD: "من السبت إلى الخميس",
+        operationH: "من 09:00 صباحًا إلى 05:00 مساءً",
+        copyright: "حقوق النشر محفوظة لشركة اسطول الرؤيا © 2024. جميع الحقوق محفوظة.",
       },
     }
   }}});

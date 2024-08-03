@@ -5,7 +5,7 @@ import Logo from '../../assets/footer1.png'
 import Logo1 from '../../assets/footer.png'
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
-
+import { Link } from 'react-scroll';
 
 const Footer = () => {
 
@@ -39,11 +39,16 @@ const Footer = () => {
                         </h1>
                     </div>
                     <div className=''>
-                        <button className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-3 py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
+                        <Link 
+                        to='contact'
+                        activeClass='text-balck'
+                        smooth={true}
+                        spy={true} 
+                            className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-3 py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
                         {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[11px]' />}
                             <p className='text-[12.5px] font-bold'>{t("banner1.button")}</p>
                         {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[11px]' /> }
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className={`flex w-full flex-col md:flex-row items-center md:px-10 pb-20 gap-10 md:space-x-16 xl:space-x-40 ${t("languages") === 'ُEnglish' ? "" : ""}`} >

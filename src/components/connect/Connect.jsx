@@ -115,7 +115,7 @@ const Connect = () => {
                         <h1 className={`z-10 ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[55px] md:text-[100px] text-[#DADBDD]" : "font-oswald text-[50px] md:text-[80px] text-black/10"} font-[600] uppercase`}> 
                             {t("connect.title")}
                         </h1>
-                        <div className={`absolute flex items-center justify-center  ${t("languages") === 'ُEnglish' ? "left-[28px] top-[9px]" : "left-[30px] md:left-[55px]  top-[2px]"}`}>
+                        <div className={`absolute flex items-center justify-center  ${t("languages") === 'ُEnglish' ? "left-[30px] md:left-[58px] top-[9px]" : "left-[30px] md:left-[55px]  top-[2px]"}`}>
                             <p className="z-10 text-amber-500 font-[600] font-serif uppercase flex text-[25px] md:text-[30px]">
                             <IoIosArrowForward className="-mr-4 rotate-0" />
                             <IoIosArrowForward className="-mr-4" />

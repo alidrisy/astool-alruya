@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Flag from '../../assets/saudi.svg'
 import Flag1 from '../../assets/usa.svg'
 import { useState, useEffect } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 /**
  * This function represents the Header component of a website.

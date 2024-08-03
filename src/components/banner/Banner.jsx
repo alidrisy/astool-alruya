@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import Truck from '../../assets/truk1.png'
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { Link } from 'react-scroll';
 
 
 const Banner = () => {
@@ -25,11 +26,16 @@ const Banner = () => {
                 {t('banner1.des')}
                 </h2>
                 <div className='pt-3 xl:pt-10 pb-20'>
-                    <button className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-2 md:px-3 sm:py-[2px] md:py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
+                    <Link 
+                        to='contact'
+                        activeClass='text-amber-500'
+                        smooth={true}
+                        spy={true} 
+                        className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-2 md:px-3 sm:py-[2px] md:py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
                     {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[7px] sm:text-[9px] md:text-[11px]' />}
                         <p className='text-[9px] sm:text-[10px] md:text-[12.5px] font-bold'>{t("banner1.button")}</p>
                     {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[7px] sm:text-[9px] md:text-[11px]' /> }
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

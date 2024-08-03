@@ -37,7 +37,7 @@ i18n
               tag2: "EXCELLENT CUSTOMER SERVICE",
               tag3: "WIDE SERVING ZONE"
             },
-             name: "Astool Alroya",
+             name: "Astool Alruya",
             dis: " takes the load off your back. We specialize in transportation solutions for construction companies, offering a reliable fleet of trucks to deliver your materials and equipment efficiently. Our mission is to provide the best options for your transport needs, ensuring smooth and timely deliveries.",
             dis1: " Let us handle the logistics so you can focus on what you do best—building and constructing with ease and precision."
           },
@@ -65,7 +65,7 @@ i18n
           numberPlaceholder: "Phone Number",
           messagePlaceholder: "Message",
           button: "Send",
-          location: "Riyadh, Jarir",
+          location: "Jarir st, Al-malaz, Riyadh",
         },
         footer: {
           title: "Any questions in mind?",
@@ -73,7 +73,7 @@ i18n
           operationT: "Hours of Operation",
           operationD: "Saturday to Thursday",
           operationH: "09:00 am to 05:00 pm",
-          copyright: "Copyright © Ostool Alroya 2024. All rights reserved."
+          copyright: "Copyright © Astool Alruya 2024. All rights reserved."
         },
       }
       },
@@ -126,7 +126,7 @@ i18n
           numberPlaceholder: "رقم الهاتف",
           messagePlaceholder: "رسالة",
           button: "إرسال",
-          location: "الرياض, جرير",
+          location: "شارع جرير،  حي الملز،  الرياض",
       
       },
       footer: {

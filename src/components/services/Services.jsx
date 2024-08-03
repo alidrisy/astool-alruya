@@ -32,7 +32,7 @@ const Services = () => {
                 </div>
                 <div className="gap-10 flex flex-col md:flex-row text-white">
                     <div className="border flex-1 flex flex-col bg-[#1C1C1C]" dir="auto">
-                        <img src={Shipping} className="w-full" alt="" />
+                        <img loading='lazy' src={Shipping} className="w-full" alt="" />
                         <div className={`mt-4 px-4 ${t("languages") === 'ُEnglish' ? "border-r-[6px] " : "border-l-[6px]"} border-amber-500 space-y-4 flex-1`}>
                             <h2 className={`text-white ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[26px]" : "font-oswald font-[400] text-[26px]"}`}>
                                 {t('services.service1.title')}
@@ -48,7 +48,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="border flex-1 flex flex-col bg-amber-500" dir="auto">
-                        <img src={Shipping2} className="w-full" alt="" />
+                        <img loading='lazy' src={Shipping2} className="w-full" alt="" />
                         <div className={`mt-4 px-4 ${t("languages") === 'ُEnglish' ? "border-r-[6px] " : "border-l-[6px]"} border-[#1C1C1C] space-y-4 flex-1`}>
                             <h2 className={`text-white ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[26px]" : "font-oswald font-[400] text-[26px]"}`}>
                             {t('services.service2.title')}
@@ -64,7 +64,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="border flex-1 flex flex-col bg-[#1C1C1C]" dir="auto">
-                        <img src={Shipping1} alt="" />
+                        <img loading='lazy' src={Shipping1} alt="" />
                         <div className={`mt-4 px-4 ${t("languages") === 'ُEnglish' ? "border-r-[6px] " : "border-l-[6px]"} border-amber-500 space-y-4 flex-1`}>
                             <h2 className={`text-white ${t("languages") === 'ُEnglish' ? "font-[700] pr-2 text-[26px]" : "font-oswald font-[400] text-[26px]"}`}>
                             {t('services.service3.title')}

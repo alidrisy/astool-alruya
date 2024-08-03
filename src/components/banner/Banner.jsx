@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <section className='section pt-[1px]' id='home'>
         <div className='relative'>
-            <img className='w-full' src={Truck} alt="" />
+            <img className='w-full' loading='lazy' src={Truck} alt="banner image" />
             <div className='absolute  w-full h-full z-10 bg-black/60 top-0'></div>
             <div className={`absolute ${t("languages") === 'ُEnglish' ? "font-sans" : "font-oswald"} w-full h-full z-20 flex flex-col space-y-2 sm:space-y-4 lg:space-y-6 xl:space-y-12 p-[60px] lg:p-[120px]  items-center -top-6 min-[500px]:top-0`}>
                 <div className='flex relative flex-col space-y-2 font-semibold justify-center items-center'>

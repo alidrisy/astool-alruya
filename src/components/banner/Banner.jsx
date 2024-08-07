@@ -31,7 +31,7 @@ const Banner = () => {
                         activeClass='text-amber-500'
                         smooth={true}
                         spy={true} 
-                        className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-2 md:px-3 sm:py-[2px] md:py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
+                        className={`bg-amber-500 cursor-pointer hover:bg-amber-400 rounded-[2px] px-2 md:px-3 sm:py-[2px] md:py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
                     {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[7px] sm:text-[9px] md:text-[11px]' />}
                         <p className='text-[9px] sm:text-[10px] md:text-[12.5px] font-bold'>{t("banner1.button")}</p>
                     {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[7px] sm:text-[9px] md:text-[11px]' /> }

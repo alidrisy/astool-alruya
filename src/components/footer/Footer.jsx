@@ -44,7 +44,7 @@ const Footer = () => {
                         activeClass='text-balck'
                         smooth={true}
                         spy={true} 
-                            className={`bg-amber-500 hover:bg-amber-400 rounded-[2px] px-3 py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
+                            className={`bg-amber-500 cursor-pointer hover:bg-amber-400 rounded-[2px] px-3 py-[4px] text-center  flex justify-center items-center space-x-1 ${t("languages") === 'ُEnglish' ? "float-start" : "float-end"}`}>
                         {t("languages") === 'ُEnglish' && <FaArrowLeft className='text-[11px]' />}
                             <p className='text-[12.5px] font-bold'>{t("banner1.button")}</p>
                         {t("languages") !== 'ُEnglish' &&<FaArrowRight className='text-[11px]' /> }
@@ -52,13 +52,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={`flex w-full flex-col md:flex-row items-center md:px-10 pb-20 gap-10 md:space-x-16 xl:space-x-40 ${t("languages") === 'ُEnglish' ? "" : ""}`} >
-                    <div className={`hidden md:flex flex-1 flex-col sm ${t("languages") === 'ُEnglish' ? "items-right" : "md:items-right"} overflow-hidden pb-[4px] space-y-8`} dir='auto'>
+                    <div className={`hidden md:flex flex-1 max-md:pt-20 flex-col sm ${t("languages") === 'ُEnglish' ? "items-right" : "md:items-right"} overflow-hidden pb-[4px] space-y-8`} dir='auto'>
                         <img src={t("languages") === 'ُEnglish' ? Logo : Logo1} className={`w-[180px]`} alt="Astool-logo" />
                         <p className={`${t("languages") === 'ُEnglish' ? "text-sm" : "font-oswald font-[300] text-sm pl-3"} text-white/80`}>
                             {t('footer.disc')}
                         </p>
                     </div>
-                    <div className={`flex md:flex-1 flex-col pt-2 ${t("languages") === 'ُEnglish' ? "items-center" : "items-center"} overflow-hidden pb-[4px] space-y-5`}>
+                    <div className={`flex md:flex-1 flex-col ${t("languages") === 'ُEnglish' ? "items-center" : "items-center"} overflow-hidden pb-[4px] space-y-5`}>
                         <h1 className={`${t("languages") === 'ُEnglish' ? "text-xl font-[700]" : "font-oswald font-[600] text-xl pl-3"} text-amber-500`}>
                             {t('footer.operationT')}
                         </h1>
@@ -71,7 +71,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={`flex md:flex-1 flex-col max-md:items-center pt-4 space-y-4`} >
+                    <div className={`flex md:flex-1 flex-col max-md:items-center space-y-4`} >
                         <h1 className={`${t("languages") === 'ُEnglish' ? "text-xl font-[700]" : "font-oswald font-[600] text-xl"} text-amber-500`}> 
                         {t("connect.title")}
                         </h1>

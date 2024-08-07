@@ -33,14 +33,6 @@ function Header() {
   }, []);
 
 
-  const handleScrollTo = (event, selector) => {
-    event.preventDefault();
-    const element = document.querySelector(selector);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    }
-};
-
   return (
     <section className=' xl:border-b '>
       <header className={`section flex justify-between  pt-1 px-2 md:px-4  ${t("languages") === 'ُEnglish' ? "flex-row-reverse" : "flex-row"} mx-auto`}>
@@ -51,7 +43,7 @@ function Header() {
             </svg>
             <span class="sr-only">Search</span>
           </button>
-          <div className='lg:hover:border-b-2 px-[2px] pb-[0px] border-amber-400 flex  items-center  text-[14px]'>
+          <div className='border-white lg:hover:border-amber-400 border-b-[3px] px-[2px] flex  items-center  text-[14px]'>
                 <button href="#" className={`flex items-center space-x-2 ${t("languages") === 'ُEnglish' ? "font-semibold" : "font-bold"}`} onClick={handleTrans} >
                   {
                     t("languages") !== 'ُEnglish' &&
@@ -67,62 +59,59 @@ function Header() {
         </div>
         <div className="items-center lg:hidden flex flex-col  absolute justify-between left-0 px-[3px] pt-1 right-0 rounded-full top-[56px]  z-40 w-full md:flex md:w-auto md:order-1" id="navbar-cta" dir='auto'>
         <ul class={`flex flex-col ${nav ? '' : 'hidden'} w-full rounded-[4px] p-3 bg-white ${t("languages") === 'ُEnglish' ? "font-bold" : "font-semibold"} md:space-x-4  text-[14px] h-full pt-[15px]`}>
-            <li className={t("languages") === 'ُEnglish' ? "pb-[2px] px-[2px]" : "px-[2px]  pb-[2px"}>
+            <li className={t("languages") === 'ُEnglish' ? "pb-[2px] px-[2px] text-amber-500 cursor-pointer" : "px-[2px] text-amber-500 pb-[2px] cursor-pointer"}>
               <Link
               to='home'
               activeClass='text-amber-500'
               smooth={true}
               spy={true}
               offset={-100}
+              herf={'/home'}
               className='px-1 md:pl-5'
               >
                 {t("home")}
               </Link>
             </li>
-            <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+            <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='about'
               activeClass='text-amber-500'
               smooth={true}
               spy={true} 
-              href="/" 
               className='px-1'
               >
                 {t("about")}
               </Link>
             </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='service'
               activeClass='text-amber-500'
               smooth={true}
               spy={true}
               offset={-100}
-              href="/" 
               className='px-1'
               >
                 {t("service")}
               </Link>
-            </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+            </li> 
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='work'
               activeClass='text-amber-500'
               smooth={true}
               spy={true} 
-              href="/" 
               className='px-1'
               >
                 {t("work")}
               </Link>
             </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='contact'
               activeClass='text-amber-500'
               smooth={true}
               spy={true} 
-              href="/" 
               className='px-1'
               >
                 {t("contact")}
@@ -136,57 +125,54 @@ function Header() {
         <div className={`max-lg:hidden w-full  md:w-auto ${t("languages") === 'ُEnglish' ? "pr-8" : "pl-4"}`}>
             
           <ul className={`flex  ${t("languages") === 'ُEnglish' ? "flex-row-reverse font-bold" : "flex-row font-semibold"} md:space-x-4  text-[14px] h-full pt-[15px]`}>
-          <li className={t("languages") === 'ُEnglish' ? "pb-[2px] px-[2px]  text-amber-500" : "px-[2px]  pb-[2px] text-amber-500"}>
+          <li className={t("languages") === 'ُEnglish' ? "pb-[2px] px-[2px]  text-amber-500 cursor-pointer" : "px-[2px]  pb-[2px] text-amber-500 cursor-pointer"}>
               <Link
               to='home'
               activeClass='text-amber-500 '
               smooth={true}
               spy={true}
               offset={-100}
-              href="/" 
+              herf={'/home'}
               className='px-1 sm:pl-5'
               >
                 {t("home")}
               </Link>
             </li>
-            <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+            <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='about'
               activeClass=''
               smooth={true}
               spy={true} 
-              href="/" 
               className='px-1'
               >
                 {t("about")}
               </Link>
             </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='service'
               activeClass='active'
               smooth={true}
               spy={true}
               offset={-120}
-              href="/" 
               className='px-1'
               >
                 {t("service")}
               </Link>
             </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='work'
               activeClass='active'
               smooth={true}
               spy={true} 
-              href="/" 
               className='px-1'
               >
                 {t("work")}
               </Link>
             </li>
-           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400'>
+           <li className='px-[2px] hover:text-amber-500 pb-[2px] border-amber-400 cursor-pointer'>
             <Link
               to='contact'
               activeClass='active'

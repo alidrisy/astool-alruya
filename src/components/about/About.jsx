@@ -54,9 +54,9 @@ const About = () => {
                 </div>
             </div>
             <div className="absolute -bottom-[40px] md:-bottom-[100px] flex w-full z-10 justify-center space-x-10 md:space-x-16 items-center">
-                    <img loading='lazy' src={Truck2} className="w-[80px] xs:w-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
-                    <img src={Truck1} loading='lazy' className="w-[80px] xs:w-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
-                    <img src={Truck} loading='lazy' className="w-[80px] xs:w-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
+                    <img loading='lazy' src={Truck2} className="w-[80px] xs:w-[120px] h-[80px] xs:h-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
+                    <img src={Truck1} loading='lazy' className="w-[80px] xs:w-[120px] h-[80px] xs:h-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
+                    <img src={Truck} loading='lazy' className="w-[80px] xs:w-[120px] h-[80px] xs:h-[120px] sm:w-[160px] sm:h-[160px] lg:w-[200px] md:w-[180px] md:h-[180px] lg:h-[200px]" alt="" />
                 </div>
         </section>
     );

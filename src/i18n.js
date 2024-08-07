@@ -9,7 +9,6 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
     fallbackLng:  navigator.language || navigator.userLanguage,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
